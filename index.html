@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avraham Blaut - Resume</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.2em;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .job-meta {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Avraham Blaut</h1>
+  <p><a href="mailto:avrahamblaut@gmail.com">AvrahamBlaut@gmail.com</a> · (404) 831-1153 · <a href="https://www.linkedin.com/in/avraham-blaut-a12bba89/">LinkedIn</a> · <a href="https://github.com/Ablaut">GitHub</a></p>
+
+<button id="theme-toggle" style="position: fixed; top: 1rem; right: 1rem;">Toggle Dark Mode</button>
+
+<style>
+  /* Default light mode styles */
+  body {
+    background: #f9f9f9;
+    color: #333;
+  }
+
+  /* Dark mode styles */
+  body.dark-mode {
+    background: #333;
+    color: #f9f9f9;
+  }
+
+  a.dark-mode {
+    color: #66ccff;
+  }
+</style>
+
+<script>
+  // JavaScript to toggle dark mode
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const links = document.querySelectorAll('a');
+    links.forEach(link => link.classList.toggle('dark-mode'));
+  });
+</script>
+
+  <nav>
+    <a href="#career-objective">Career Objective & Summary</a> ·
+    <a href="#skills">Skills</a> ·
+    <a href="#experience">Experience</a> ·
+    <a href="#education">Education</a>
+  </nav>
+
+
+  <div class="section" id="career-objective">
+    <h2>Career Objective & Summary </h2>
+    <p> <b>Senior Data and Analytics.</b> Obsessed with advancing capabilities to empower stakeholders to leverage data into insights that drive
+        actions. Proven track record of advancing data architecture and analytics practices to enhance measurement accuracy, marketing
+        attribution, and ad revenue. Skilled in transforming complex data from ETL pipelines to data stories that facilitate strategic outcomes.</p>
+  </div>
+
+<div class="section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+
+      <li> <b> Languages and Packages: </b> Python, SQL, HTML </li>
+      <li> <b> Softwares: </b> Microsoft Word, Powerpoint, Excel, Outlook </li>
+      <li> <b> Analytics Tools and Platforms: </b> Looker, Tableau, Metabase, Databricks, Salesforce </li>
+      <li> <b> Soft Skills: Communication, Teamwork </b> </li>
+      <li> <b> GIS: </b> Geopandas, QGIS, Shapely. ESRI Suite including ArcCatalog, ArcMap, ArcGIS, ArcGIS Online, ArcGIS Pro,</li>
+      <li> <b> Misc: </b> Git, JIRA, ETL Pipelines, Data Warehousing, Redshift, Sagemaker, AWS account management, tensorflow, SPSS, SAS, AWS Appflow, S3, Pandas, Numpy, A/B testing, KPI development, dashboard design, model training and evaluation, statistical inference, Batch data Processing.</li>
+    </ul>
+  </div>
+
+<div class="section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <p class="job-title">Presence – Senior Data Engineer</p>
+    <p class="job-meta">New York, NY · 2023 - 2024</p>
+    <ul>
+      <li>Lead engineer responsible for ETL processes within our codebase, Salesforce, and Redshift databases using SQL and Python in Airflow and Metabase to manage dataflows to six different departments from nine disparate data sources.</li>
+      <li>Assisted internal users in Looker and Tableau to realize better decision-making with their data through writing and optimizing queries. Constructed and instructed analytics and leadership in visualization techniques.</li>
+      <li>Conducted processes using Atlassian suite including JIRA and Confluence. Managed systems configurations considering costs, speed, usability, and compliance for SOC 2 and HIPAA across our databases.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">80-20ai – Founding Team (Technology, Data, Product)</p>
+    <p class="job-meta">New York, NY · 2022 - 2023</p>
+    <ul>
+      <li>Led the technical efforts in software development for machine learning-based climate risk forecasting for eight different natural disasters. Responsible for data architecture, technology stack, tech timeline, machine learning algorithms identification, and product direction.</li>
+      <li>Created and executed the plan for the data pipeline including identification, sourcing, contracts, extracting, interpolating, transforming, formatting, machine learning, forecasting, analysis, and visualizations.</li>
+      <li>Championed documentation for the entire process. Responsibilities to understand client needs, synthesize them into product requirements and direction, and execute the vision. Resulting in three successful pitches and contracts.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Compass – Geospatial Analyst</p>
+    <p class="job-meta">New York, NY · 2019 - 2022</p>
+    <ul>
+      <li>Handled the back-end geospatial data for the Compass real estate platform, including managing the ingestion, maintenance, and modification of seven national data sets, hundreds of thousands of geospatial entities, and millions of national listings, with unique processes for each source originator.</li>
+      <li>Analyzed listings data to surface trends which directed product decisions through KPI development and market expansion plans.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Facebook – Geospatial Curation Specialist</p>
+    <p class="job-meta">New York, NY · 2018 - 2019</p>
+    <ul>
+      <li>Responsible for intake, assessment, and correction of internationally used geospatial data and reporting financial impacts of improvements.</li>
+      <li>Evaluated two major data providers for accuracy and completeness, developing methodologies for correcting shortcomings of third-party information resulting in over 3 million dollars of saved revenue in the first three months.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+  <p class="job-title">Cushman & Wakefield – GIS Analyst</p>
+  <p class="job-meta">New York, NY · 2017 - 2018</p>
+  <ul>
+    <li>Worked nationally creating visualizations for client support, business development, and consulting. Supporting national mapping and demographics needs such as commute, relocation, and competitor spatial analysis.</li>
+    <li>Developed demographics and lease comparable maps and analysis for retail developments.</li>
+    <li>Assessed data quality and availability for national and local data sources.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <p class="job-title">Georgia Institute of Technology Center for GIS – Research Assistant</p>
+  <p class="job-meta">Atlanta, GA · 2015 - 2016</p>
+  <ul>
+    <li>Contributed to a variety of research projects that involved secondary data source management, statistical and qualitative analytical methods, created visualizations, and designed scripts that automated reasoned and computational methods.</li>
+    <li>Led GIS research that specialized in health and the built environment - creating and validating over <i> 20 </i> built environment measures.</li>
+    <li>Researched and wrote county-level industrial and economic study including industrial land inventory, economic, policy, and organizational network analysis.</li>
+  </ul>
+</div>
+
+</div>
+
+<div class="section" id="education">
+  <h2>Education</h2>
+  <p>
+    <u>Masters of Science, Geographic Information Science and Technology: Concentration in Housing and Community Development</u>
+    <span style="float: right;">Georgia Institute of Technology 2015-2016</span>
+  </p>
+  <p>
+    <u>Bachelor of Arts, Geography: Urban & Regional Planning</u>
+    <span style="float: right;">SUNY Binghamton 2012-2015</span>
+  </p>
+</div>
+
+</body>
+</html>
+
